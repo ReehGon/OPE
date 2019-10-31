@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+<form action="/pagina-processa-dados-do-form" method="post">
+    <div>
+	<b> <label for="nome">Cadastro de Cliente</label> </b> <p> </p>
+	</div>
+	<div>
+        <label for="name">Nome:</label> 
+        <input type="text" id="name" required maxlength="50"/> <p> </p>
+    </div>
+    <div>
+        <label for="lastname">Sobrenome:</label> 
+        <input type="text" id="lastname" required maxlength="50"/> <p> </p>
+    </div>
+        <div>
+        <label for="idade">Idade:</label> 
+        <input type="email" id="idade"  required maxlength="3" onkeypress="validate(event)"/> <p> </p>
+    </div>
+        <div>
+        <label for="sexo">Sexo:</label>
+            <select class="simple basic" id="Tipo de Tratamento"> <p> </p>
+            <option value = "CIRURGICO" selected="selected">Feminino</option> <p> </p>
+            <option value = "LP">Masculino</option><p> </p>
+        </select>
+    </div>
+        <div>
+        <label for="Altura em CM">Altura em CM:</label> 
+        <input type="" id="mail" required maxlength="3" onkeypress="validate(event)" /> <p> </p>
+    </div>
+        <div>
+        <label for="Peso">Peso:</label> 
+        <input type="email" id="mail" required maxlength="4" onkeypress="validate(event)"/> <p> </p>
+    </div>
+        <div>
+        <label for="Cellphone">Celular:</label> 
+        <input type="email" id="mail" required maxlength="11" onkeypress="validate(event)"/> <p> </p>
+    </div>
+        <div>
+        <label for="Telephone">Telefone:</label> 
+        <input type="email" id="mail" required maxlength="11" onkeypress="validate(event)"/> <p> </p>
+    </div>
+        <div>
+        <label for="mail">Tratamento que esta sendo realizado:</label> 
+        <select class="simple basic" id="Tipo de Tratamento"> <p> </p>
+            <option value = "CIRURGICO" selected="selected">Estético</option>
+            <option value = "LP">Limpeza de Pele</option><p> </p>
+        </select>
+    </div>
+    <div>
+        <label for="date">Data inicio:</label> 
+        <input id="date" type="date" value="0000-00-00" required maxlength="10" onkeypress="validate(event)"></input> <p> </p>
+    </div>
+    <div>
+        <label for="mail">Quantidade de Sessões:</label> 
+        <input type="email" id="mail" maxlength="4"onkeypress="validate(event)" /> <p> </p>
+    </div>
+    <div class="button">
+        <button type="submit">Cadastrar</button> <p> </p>
+    </div>
+</form>
+</body>
+
+<script>function validate(evt) {
+  var theEvent = evt || window.event;
+
+  // Handle paste
+  if (theEvent.type === 'paste') {
+      key = event.clipboardData.getData('text/plain');
+  } else {
+  // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+      key = String.fromCharCode(key);
+  }
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}</script>
+</html>
