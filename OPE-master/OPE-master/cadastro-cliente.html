@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<!--Início do site-->
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro de Clientes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- Fim do título-->
+
+<!-- Início do corpo do site-->
+<body>
+<form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;" class="box" style="width: 700px" style="font-size: 100" >
+ <table width="625" border="0">
+
+ <h1><center>Cadastro de cliente</center></h1>
+
+ <!--Campo nome-->
+ <tr>
+ <td width="69">Nome:</td>
+ <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="name" />
+ <!--<span class="style1">*</span></td>-->
+ </tr>
+
+<!-- Campo sobrenome -->
+ <tr>
+ <td width="69">Sobrenome:</td>
+ <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60" class="lastname" />
+ </tr>
+
+ <!--E-mail-->
+ <tr>
+ <td>Email:</td>
+ <td><input name="email" type="text" id="email" size="70" maxlength="60" class="email" />
+ <!--<span class="style1">*</span></td>-->
+ </tr>
+
+ <!--Sexo-->
+ <tr>
+ <td>Sexo:</td>
+ <td><input name="sexo" type="radio" value="Masculino" checked="checked" />
+ Masculino </td>
+ <td><input name="sexo" type="radio" value="Feminino" />
+ Feminino </td>
+ <!--<span class="style1">*</span> </td>-->
+ </tr>
+
+ <!-- Nascimento -->
+ <tr>
+	<td>Data de nascmento:</td><br/>
+	<td><input type="date" id="date"/></td>
+</tr>
+
+ <!--Telefone-->
+ <!--<tr>
+ <td>DDD:</td>
+ <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />-->
+
+ <td>Telefone:</td>
+
+ <td><input name="telefone" type="text" id="telefone" placeholder="Apenas números com DDD" /></td>
+ </tr>
+
+ <!-- Endereço -->
+ <tr>
+ <td>Endereço:</td>
+ <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+ <!--<span class="style1">*</span></td>-->
+ </tr>
+
+ <!-- Cidade -->
+ <tr>
+ <td>Cidade:</td>
+ <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+ <!--<span class="style1">*</span></td>-->
+ </tr>
+ <tr>
+
+ <!-- Estado -->
+ <td>Estado:</td>
+ <td><select name="estado" id="estado">
+ <option>Selecione...</option>
+ <option value="AC">AC</option>
+ <option value="AL">AL</option>
+ <option value="AP">AP</option>
+ <option value="AM">AM</option>
+ <option value="BA">BA</option>
+ <option value="CE">CE</option>
+ <option value="ES">ES</option>
+ <option value="DF">DF</option>
+ <option value="MA">MA</option>
+ <option value="MT">MT</option>
+ <option value="MS">MS</option>
+ <option value="MG">MG</option>
+ <option value="PA">PA</option>
+ <option value="PB">PB</option>
+ <option value="PR">PR</option>
+ <option value="PE">PE</option>
+ <option value="PI">PI</option>
+ <option value="RJ">RJ</option>
+ <option value="RN">RN</option>
+ <option value="RS">RS</option>
+ <option value="RO">RO</option>
+ <option value="RR">RR</option>
+ <option value="SC">SC</option>
+ <option value="SP">SP</option>
+ <option value="SE">SE</option>
+ <option value="TO">TO</option>
+ </select>
+ <!--<span class="style1">* </span></td>-->
+ </tr>
+ <tr>
+
+ <!-- Bairro -->
+ <td>Bairro:</td>
+ <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+ </tr>
+ <tr>
+
+ <!-- País -->	
+ <td>País:</td>
+ <td><input name="pais" type="text" id="pais" maxlength="20" />
+ <span class="style1">*</span></td>
+ </tr>
+</body>
+</html>

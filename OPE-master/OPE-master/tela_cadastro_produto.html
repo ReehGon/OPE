@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Cadastro de Produtos</title>
+</head>
+<body>
+	<form action="/cadastro-produto" method="post" class="box">
+		<div>
+			<b> <label for="nome">Cadastro de Produto</label> </b> <p> </p>
+		</div>
+		<div>
+			<label for="nome">Nome do Produto:</label><br/>
+			<input type="text" id="nome" maxlength=30/><p></p>
+		</div>
+		<div>
+			<label for="nome">Marca do Produto:</label> <br/>
+			<input type="text" id="nome" maxlength=30> <p> </p>
+		</div>
+		<div>
+			<label for="msg">Descrição do Produto:</label><br/>
+			<textarea style="resize: none" id="msg" maxlength=100 rows="10" cols="40" placeholder="Escreva aqui uma descrição sobre o produto cadastrado."></textarea> <p> </p>
+		</div>
+		<div>
+			<label for="data">Validade:</label><br/>
+			<input type="date" id="date"/> <p> </p>
+		</div>
+		<div class="button">
+			<button type="submit"> <b> Cadastrar o Produto </b> </button> <br/>
+		</div><br/>
+		<div class="button">
+			<button type="reset"> <b> Limpar Dados </b> </button>
+		</div>
+	</form> 
+</body>
+</html>

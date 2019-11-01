@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(https://wallpapercave.com/wp/Rstecz1.jpg);
+}
+
+.box{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #CD8162;
+	text-align: center;
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+
+	.box h1{
+		
+	}
+}
+
+.box input[type = "text"],.box input[type="password"]{
+	border:0;
+	background: none;
+	display: black;
+	margin:20px auto;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.box input[type = "text"]:focus,.box input[type="password"]:focus{
+	width: 280px;
+	border-color: #00C5CD;
+}
+
+.box input[type = "submit"]{
+	border:0;
+	background: none;
+	display: black;
+	margin:20px auto;
+	text-align: center;
+	border: 2px solid #4EEE94;
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+
+.box input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+.footer.footer {
+	position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+p.copyright {
+        width: 100%;
+        color: black;
+        line-height: 50px;
+        font-size: 0.7em;
+        text-align: right;
+        margin-top: 640px;
+        margin-left: -20px;
+        bottom:0;
+}
